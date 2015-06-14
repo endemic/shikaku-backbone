@@ -1,0 +1,507 @@
+/* Prevents user select */
+/* Makes width/height include padding & border */
+/* CSS3 animation definitions */
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.0; }
+
+  50% {
+    opacity: 0.8; }
+
+  100% {
+    opacity: 0.0; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0.0; }
+
+  50% {
+    opacity: 0.8; }
+
+  100% {
+    opacity: 0.0; } }
+
+@-ms-keyframes blink {
+  0% {
+    opacity: 0.0; }
+
+  50% {
+    opacity: 0.8; }
+
+  100% {
+    opacity: 0.0; } }
+
+@font-face {
+  font-family: 'Insolent';
+  src: url("../fonts/insolent.otf") format("opentype");
+  /* Safari, Android, iOS */ }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 62.5%;
+  background: #000; }
+
+/****************************/
+/*			DEFAULT			*/
+/****************************/
+#shikaku {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  font: normal 1.6em/1.5 Insolent, sans-serif;
+  text-align: center;
+  color: white;
+  background: url("../images/ipad-startup-portrait.png") center center no-repeat black;
+  background-size: cover;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -ms-user-select: none;
+  -ms-touch-callout: none;
+  -ms-tap-highlight-color: transparent;
+  -moz-user-select: none;
+  -moz-touch-callout: none;
+  -moz-tap-highlight-color: transparent;
+  user-select: none;
+  touch-callout: none;
+  tap-highlight-color: transparent;
+  /************************************/
+  /*				LANDSCAPE 			*/
+  /************************************/ }
+  #shikaku .scene {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    background: url("../images/background.png") 0 0 repeat-x #351125;
+    overflow: hidden; }
+    #shikaku .scene .container {
+      overflow: hidden; }
+    #shikaku .scene.in {
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+      -webkit-transform: translateY(-100%);
+      transition: transform 0.5s ease-in-out;
+      transform: translateY(-100%); }
+    #shikaku .scene.out {
+      -webkit-transition: -webkit-transform 0.5s ease-in-out;
+      -webkit-transform: translateY(-200%);
+      transition: transform 0.5s ease-in-out;
+      transform: translateY(-200%); }
+    #shikaku .scene.instantIn {
+      -webkit-transition: -webkit-transform 0s ease-in-out;
+      -webkit-transform: translateY(-100%); }
+    #shikaku .scene.instantOut {
+      -webkit-transition: -webkit-transform 0s ease-in-out;
+      -webkit-transform: translateY(-200%); }
+  #shikaku h1 {
+    text-transform: uppercase;
+    font: normal 2.6em/1.5 Insolent, sans-serif;
+    margin: 3%;
+    text-shadow: 5px -5px 0 black;
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+    -ms-text-stroke: 1px black; }
+  #shikaku h2 {
+    text-transform: uppercase;
+    font: normal 2em/1.5 Insolent, sans-serif;
+    margin: 3%;
+    text-shadow: 5px -5px 0 black;
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+    -ms-text-stroke: 1px black; }
+  #shikaku button {
+    font: normal 1em/1.8 Insolent, sans-serif;
+    width: 50%;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 3%;
+    box-shadow: 5px -5px 0 black; }
+    #shikaku button:active {
+      box-shadow: none; }
+    #shikaku button.small {
+      width: 30%;
+      font-size: 0.7em;
+      line-height: 2; }
+    #shikaku button.back {
+      float: left; }
+    #shikaku button.previous, #shikaku button.next {
+      width: 13%; }
+  #shikaku ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto; }
+  #shikaku p {
+    margin: 0; }
+  #shikaku .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.65);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    z-index: 3;
+    opacity: 0; }
+  #shikaku .dialog-box {
+    background: #fff;
+    color: #000;
+    padding: 3%;
+    border: 1px solid #000;
+    box-shadow: 5px -5px 0 black;
+    position: absolute;
+    width: 80%;
+    z-index: 4;
+    opacity: 0; }
+    #shikaku .dialog-box h3 {
+      margin: 0;
+      font-size: 1.3em;
+      font-weight: normal; }
+    #shikaku .dialog-box button {
+      width: 35%;
+      margin-top: 2%; }
+  #shikaku #title h1 {
+    font-size: 3em;
+    margin-top: 10%; }
+  #shikaku #title .copyright {
+    text-shadow: 5px -5px 0 black;
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+    -ms-text-stroke: 1px black;
+    margin-top: 18%; }
+  #shikaku #game .actions {
+    margin-top: 4.5%;
+    margin-bottom: 0;
+    width: 40%; }
+  #shikaku #game .info {
+    background: #fff;
+    font-size: 1.8em;
+    margin: 4.5% 3% 0 3%;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #000;
+    width: 40%;
+    height: 19%;
+    padding: 3%;
+    border: 1px solid #000;
+    display: inline-block;
+    overflow: hidden;
+    box-shadow: 5px -5px 0 black;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+  #shikaku #game .grid {
+    width: 100%;
+    height: 67%;
+    position: absolute;
+    overflow: hidden;
+    background: #fff;
+    border-right: 1px solid #000;
+    box-shadow: 5px -5px 0 black; }
+    #shikaku #game .grid div {
+      width: 10%;
+      height: 10%;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+      float: left;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
+      #shikaku #game .grid div:nth-child(10n+1) {
+        border-left: 1px solid #000; }
+      #shikaku #game .grid div span {
+        background: #560f34;
+        color: #fff;
+        display: block;
+        border-radius: 100%;
+        width: 95%;
+        height: 95%;
+        margin: 4%;
+        font-size: 1.3em;
+        line-height: 160%;
+        text-shadow: 0 -1px #666666;
+        box-shadow: 0 1px 1px #333;
+        position: relative;
+        z-index: 1; }
+  #shikaku #game .rectangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 3px solid #f92807;
+    width: 10%;
+    height: 6.6%;
+    border-radius: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+    #shikaku #game .rectangle span {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #f92807;
+      opacity: 0.25;
+      border-radius: 10px; }
+    #shikaku #game .rectangle.hint {
+      -webkit-animation-name: blink;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: reverse;
+      -webkit-animation-timing-function: ease-in-out;
+      -moz-animation-name: blink;
+      -moz-animation-duration: 2s;
+      -moz-animation-iteration-count: infinite;
+      -moz-animation-direction: reverse;
+      -moz-animation-timing-function: ease-in-out;
+      -ms-animation-name: blink;
+      -ms-animation-duration: 2s;
+      -ms-animation-iteration-count: infinite;
+      -ms-animation-direction: reverse;
+      -ms-animation-timing-function: ease-in-out; }
+    #shikaku #game .rectangle.valid span {
+      opacity: 0.35; }
+  #shikaku #about {
+    color: #fff; }
+    #shikaku #about h2 {
+      clear: left;
+      padding-top: 3%; }
+    #shikaku #about p {
+      text-shadow: 5px -5px 0 black;
+      -webkit-text-stroke: 1px black;
+      -moz-text-stroke: 1px black;
+      -ms-text-stroke: 1px black;
+      font-size: 1.1em;
+      padding: 3%; }
+  #shikaku #options {
+    color: #fff; }
+    #shikaku #options h2 {
+      clear: left;
+      padding-top: 3%; }
+    #shikaku #options p {
+      font-size: 1.2em;
+      padding: 3%;
+      text-shadow: 5px -5px 0 black;
+      -webkit-text-stroke: 1px black;
+      -moz-text-stroke: 1px black;
+      -ms-text-stroke: 1px black;
+      display: block; }
+  #shikaku #difficulty-select .restore {
+    float: right; }
+  #shikaku #difficulty-select h2 {
+    clear: both;
+    padding-top: 3%; }
+  #shikaku #difficulty-select .difficulty button {
+    width: 80%;
+    line-height: 2.2;
+    font-size: 1.4em;
+    padding: 0 5%;
+    text-align: left; }
+    #shikaku #difficulty-select .difficulty button span {
+      font-size: 0.7em;
+      float: right;
+      line-height: 2.9; }
+  #shikaku #difficulty-select .buy {
+    width: 76%;
+    display: none;
+    background: #fff;
+    color: #000;
+    padding: 2%;
+    border: 1px solid #000;
+    box-shadow: 5px -5px 0 black; }
+  #shikaku #level-select .back {
+    width: 40%; }
+  #shikaku #level-select .previous {
+    float: left;
+    margin-top: 25%; }
+  #shikaku #level-select .next {
+    float: right;
+    margin-top: 25%; }
+  #shikaku #level-select .previous, #shikaku #level-select .next {
+    line-height: 2.2;
+    font-size: 0.8em; }
+    #shikaku #level-select .previous.disabled, #shikaku #level-select .next.disabled {
+      opacity: 0.5; }
+  #shikaku #level-select h2 {
+    clear: left;
+    padding-top: 3%; }
+  #shikaku #level-select .preview {
+    width: 60%;
+    height: 40%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 5px -5px 0 black; }
+    #shikaku #level-select .preview div {
+      width: 10%;
+      height: 10%;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+      float: left;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
+      #shikaku #level-select .preview div:nth-child(10n+1) {
+        border-left: 1px solid #000; }
+      #shikaku #level-select .preview div span {
+        background: #560f34;
+        color: #fff;
+        display: block;
+        border-radius: 100%;
+        width: 95%;
+        height: 95%;
+        margin: 4%;
+        line-height: 150%;
+        font-size: 0.8em;
+        text-shadow: 0 -1px #666666;
+        box-shadow: 0 1px 1px #333; }
+  #shikaku #level-select ul.info {
+    margin-top: 5%;
+    font-size: 1.2em; }
+    #shikaku #level-select ul.info li {
+      text-shadow: 5px -5px 0 black;
+      -webkit-text-stroke: 1px black;
+      -moz-text-stroke: 1px black;
+      -ms-text-stroke: 1px black; }
+  #shikaku.landscape button {
+    width: 35%;
+    margin: 3%; }
+    #shikaku.landscape button.small {
+      width: 25%;
+      font-size: 0.7em; }
+    #shikaku.landscape button.back {
+      float: left;
+      width: 20%;
+      font-size: 0.7em; }
+    #shikaku.landscape button.previous, #shikaku.landscape button.next {
+      width: 10%; }
+  #shikaku.landscape .dialog-box {
+    padding: 1%;
+    width: 60%; }
+    #shikaku.landscape .dialog-box h3 {
+      font-size: 1.3em; }
+    #shikaku.landscape .dialog-box button {
+      width: 35%;
+      margin-top: 5%; }
+  #shikaku.landscape #title h1 {
+    font-size: 4em;
+    line-height: 1;
+    margin: 6% 0 0 0; }
+  #shikaku.landscape #title nav button {
+    width: 45%;
+    margin: 2%; }
+  #shikaku.landscape #title .copyright {
+    margin-top: 5%; }
+  #shikaku.landscape #about h2 {
+    margin: 1%;
+    padding-top: 0; }
+  #shikaku.landscape #about p {
+    font-size: 1em;
+    padding: 3%;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; }
+  #shikaku.landscape #about button {
+    display: inline-block;
+    margin: 3% 6%; }
+  #shikaku.landscape #difficulty-select h2 {
+    margin-bottom: 0;
+    padding-top: 0; }
+  #shikaku.landscape #difficulty-select .difficulty button {
+    line-height: 2;
+    font-size: 1.2em;
+    margin: 1.2%; }
+    #shikaku.landscape #difficulty-select .difficulty button span {
+      line-height: 2.6; }
+  #shikaku.landscape #level-select .back {
+    width: 25%; }
+  #shikaku.landscape #level-select .previous {
+    float: left;
+    margin-top: -12%;
+    width: 8%; }
+  #shikaku.landscape #level-select h2 {
+    padding-top: 0; }
+  #shikaku.landscape #level-select .next {
+    float: right;
+    margin-top: -12%;
+    width: 8%; }
+  #shikaku.landscape #level-select .previous, #shikaku.landscape #level-select .next {
+    line-height: 2;
+    font-size: 0.8em; }
+  #shikaku.landscape #level-select .preview {
+    width: 40%;
+    height: 60%;
+    float: left;
+    margin: 0 0 0 10%; }
+  #shikaku.landscape #level-select ul.info {
+    margin: 7% 0 3% 0; }
+  #shikaku.landscape #game .actions {
+    float: left;
+    clear: left;
+    margin: 1.7% 1.5% 1.5% 1.5%;
+    width: 30%; }
+  #shikaku.landscape #game .info {
+    float: left;
+    clear: left;
+    margin: 1.5%;
+    width: 30%;
+    height: 30%; }
+  #shikaku.landscape #game .grid {
+    width: 67%;
+    height: 100%; }
+  #shikaku.landscape #game .rectangle {
+    width: 6.6%;
+    height: 10%; }
+
+/* iPhone/iPod Touch */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #shikaku {
+    background-image: url("../images/iphone-startup-portrait.png");
+    background-size: auto; } }
+/* iPhone/iPod Touch (Retina) */
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  #shikaku {
+    background-image: url("../images/iphone-startup-portrait@2x.png");
+    background-size: contain; }
+    #shikaku .scene {
+      background-image: url("../images/background@2x.png");
+      background-size: contain; } }
+/* iPad */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #shikaku {
+    background-image: url("../images/ipad-startup-portrait.png");
+    background-size: auto; }
+    #shikaku.landscape {
+      background-image: url("../images/ipad-startup-landscape.png"); }
+    #shikaku .scene {
+      background-image: url("../images/background-ipad.png"); } }
+/* iPad (Retina) */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  #shikaku {
+    background-image: url("../images/ipad-startup-portrait@2x.png");
+    background-size: contain; }
+    #shikaku.landscape {
+      background-image: url("../images/ipad-startup-landscape@2x.png");
+      background-size: contain; }
+    #shikaku .scene {
+      background-image: url("../images/background-ipad@2x.png");
+      background-size: contain; } }
+/* Additional tablet/desktop styles */
+@media screen and (min-device-width: 769px) {
+  #shikaku .scene {
+    background-image: url("../images/background-ipad.png"); }
+    #shikaku .scene * {
+      cursor: url("../images/cursor.cur"), default; } }

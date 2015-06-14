@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "name": "Shikaku",
+  "description": "A fun & challenging puzzle game; best described as a mix between sudoku and crosswords. Use the provided clues to fill in the correct blocks in the grid, revealing a hidden picture. Includes an interactive tutorial to get beginners up to speed. Think you're a nonogram master? Try solving the randomly generated puzzles for infinite replay value!",
+  "icons": {
+    "16": "/assets/images/icons/icon-16.png",
+    "48": "/assets/images/icons/icon-48.png",
+    "128": "/assets/images/icons/icon-128.png",
+    "30": "/assets/images/icons/icon-30.png",
+    "60": "/assets/images/icons/icon-60.png"
+  },
+  "developer": {
+    "name": "Ganbaru Games",
+    "url": "http://ganbarugames.com"
+  },
+  "fullscreen": "true",
+  "installs_allowed_from": ["*"],
+  "launch_path": "/firefox/",
+  "default_locale": "en"
+}

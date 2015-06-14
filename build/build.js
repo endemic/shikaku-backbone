@@ -1,0 +1,1 @@
+({appDir:".",baseUrl:"src",dir:"build",mainConfigFile:"src/main.js",stubModules:["text","cs"],paths:{cs:"../coffeescript/cs",CoffeeScript:"../coffeescript/CoffeeScript",jquery:"lib/zepto",underscore:"lib/underscore",backbone:"lib/backbone",buzz:"lib/buzz"},modules:[{name:"main",exclude:["CoffeeScript"]}]})

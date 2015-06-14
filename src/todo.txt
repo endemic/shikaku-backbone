@@ -1,0 +1,12 @@
+[X] Update the Android version of difficulty select scene to purchase last 3 level packs using in-app billing plugin
+[X] Consolidate the "About" scene to remove the Javascript library credits, move "Reset Data" button there
+[X] Upload .apk in order to create in-app billing item - $0.99 for the rest of the levels
+[X] Double-check the scene transition effect; seems to be wonky on iOS
+[X] Fix orientation change event
+[ ] Test out IAP 
+[X] Remove permissions from Android manifest
+[ ] Update game scene so player can't overlap rectangles
+[ ] Add Android splash screen
+
+NEW KEYWORDS:
+sudoku,crossword,crosswords,nonogram,nonograms,picross,logic,akari,nurikabe,slitherlink,kakuro,japan

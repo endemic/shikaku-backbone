@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "name": "Shikaku",
+  "description": "Are you a puzzle maniac? Do you eat Japanese logic games like sudoku and nonograms for breakfast? Give Shikaku Madness a try. It's a fun and challenging game, with 120 unique puzzles to solve. Bust your brain as you try to figure out how to completely cover the game grid using squares and rectangles. Sound complicated? Don't worry! There's an interactive tutorial for new players to help learn the rules.",
+  "icons": {
+    "16": "/assets/images/icons/icon-16.png",
+    "48": "/assets/images/icons/icon-48.png",
+    "128": "/assets/images/icons/icon-128.png",
+    "30": "/assets/images/icons/icon-30.png",
+    "60": "/assets/images/icons/icon-60.png"
+  },
+  "developer": {
+    "name": "Ganbaru Games",
+    "url": "http://ganbarugames.com"
+  },
+  "fullscreen": "true",
+  "installs_allowed_from": ["*"],
+  "launch_path": "/firefox/",
+  "default_locale": "en"
+}

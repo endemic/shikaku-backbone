@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:54
+-keep class com.ganbarugames.shikakujs.ShikakuMadness { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class net.robotmedia.billing.BillingReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class net.robotmedia.billing.BillingService { <init>(...); }
+
